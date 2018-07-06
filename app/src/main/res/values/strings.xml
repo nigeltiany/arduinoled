@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Arduino LED</string>
+    <string name="title_activity_play_">play_Activity</string>
+    <string name="text_visibility">Devices</string>
+    <string name="text_bluetooth">Bluetooth</string>
+    <string name="text_visible">Visibility</string>
+    <string name="text_delay">Delay</string>
+    <string name="save_color">Save Color</string>
+    <string name="button_on">On</string>
+    <string name="button_off">Off</string>
+    <string name="text_fade">Fade</string>
+    <string name="group_name">Name Group</string>
+    <string name="save_group_button">Save</string>
+    <string name="r_Pin">R</string>
+    <string name="g_Pin">G</string>
+    <string name="b_Pin">B</string>
+    <string name="text_devices">Devices</string>
+    <string name="search_button">Button</string>
+    <string name="color">TextView</string>
+    <string name="changecolor">Change Color</string>
+    <string name="blueled">blueLEDimg</string>
+    <string name="greenled">greenLEDimg</string>
+    <string name="redled">redLEDimg</string>
+    <string name="appname">Arduino LED</string>
+    <string name="button_search">search_devices</string>
+    <string name="TextView">TextView</string>
+    <string name="led_image">led_image</string>
+    <string name="colorwheel">Color Wheel</string>
+    <string name="seekbars">SeekBars</string>
+    <string name="rateapp">Rate App</string>
+    <string name="notext"></string>
+
+    <array name="menu">
+        <item>Edit</item>
+        <item>Delete</item>
+        <item>Delete All</item>
+    </array>
+
+    <array name="group_menu">
+        <item>Delete</item>
+        <item>Delete All</item>
+    </array>
+
+    <array name="hardware_menu">
+        <item>Spinner Mode</item>
+    </array>
+
+    <string name="ConfigActivityBanner">ca-app-pub-3272235087871899/3822281560</string>
+    <string name="ColorActivityBanner">ca-app-pub-3272235087871899/5299014765</string>
+    <string name="PlayActivityBanner">ca-app-pub-3272235087871899/8252481161</string>
+    <string name="ConfigActivityAPI21">ca-app-pub-3272235087871899/9949540360</string>
+    <string name="BluetoothActivityAds">ca-app-pub-3272235087871899/4542135164</string>
+    <string name="ColorActivityAds">ca-app-pub-3272235087871899/9611463168</string>
+    <string name="redSeekText">255</string>
+    <string name="greenSeekText">255</string>
+    <string name="blueSeekText">255</string>
+    <string name="DelayValueText">0.5s</string>
+    <string name="red_value">0</string>
+    <string name="green_value">0</string>
+    <string name="blue_value">0</string>
+    <string name="image">Specs</string>
+    <string name="wiresText">Connections</string>
+    <string name="codeTextBTN">Arduino code</string>
+    <string name="delatTXT">0.5s</string>
+    <string name="ColorName">Color Name</string>
+    <string name="eq">eq</string>
+
+</resources>
+

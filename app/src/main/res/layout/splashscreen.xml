@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".paid.Splashscreen"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/appname"
+        android:id="@+id/appname"
+        android:gravity="top"
+        android:textColor="#fdfdfd"
+        android:textSize="60sp"
+        android:textAlignment="center"
+        android:visibility="visible"
+        android:backgroundTintMode="src_over" />
+
+    <VideoView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/appVideoView"
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/allthreeleds"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/redled"
+                android:layout_gravity="center_vertical|left"
+                android:src="@drawable/red_led_on"
+                android:adjustViewBounds="false"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/redled" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/greenled"
+                android:layout_gravity="center"
+                android:src="@drawable/green_led_on"
+                android:layout_marginRight="50dp"
+                android:contentDescription="@string/greenled" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/blueled"
+                android:layout_gravity="center_vertical|right"
+                android:src="@drawable/blue_led_on"
+                android:layout_marginRight="0dp"
+                android:contentDescription="@string/blueled" />
+
+        </TableRow>
+    </LinearLayout>
+
+</RelativeLayout>

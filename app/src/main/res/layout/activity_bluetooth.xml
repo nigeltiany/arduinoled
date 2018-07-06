@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".paid.BluetoothV2"
+    android:scrollIndicators="right"
+    android:screenOrientation="portrait">
+
+    <ToggleButton
+        android:layout_width="80dp"
+        android:layout_height="83dp"
+        android:id="@+id/bluetooth_button"
+        android:checked="false"
+        android:background="@drawable/check"
+        android:layout_alignTop="@+id/arduino"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_devices_list"
+        android:choiceMode="singleChoice"
+        android:layout_alignBottom="@+id/devices_list"
+        android:layout_below="@+id/Paired"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:footerDividersEnabled="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/devices_list"
+        android:scrollIndicators="left"
+        android:choiceMode="singleChoice"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Paired" />
+
+    <ImageButton
+        android:id="@+id/search_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="@string/search_button"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/search"
+        android:scaleType="fitCenter"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:nestedScrollingEnabled="false"
+        android:background="@drawable/abc_item_background_holo_dark"
+        android:layout_marginRight="0dp"
+        android:contentDescription="@string/button_search"
+        android:layout_marginBottom="4dp"
+        android:padding="7dp" />
+
+    <ToggleButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/Paired"
+        android:checked="true"
+        android:nestedScrollingEnabled="false"
+        android:textOn="     Paired     "
+        android:textOff="     Paired     "
+        android:layout_centerVertical="true"
+        android:layout_marginTop="0dp"
+        android:layout_toLeftOf="@+id/color"
+        android:layout_toStartOf="@+id/color"
+        android:layout_marginRight="-5dp"
+        android:background="@drawable/toggler"
+        android:textColor="#ffffff" />
+
+    <ToggleButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/New"
+        android:checked="false"
+        android:layout_alignTop="@+id/Paired"
+        android:layout_marginTop="0dp"
+        android:textOn="       New       "
+        android:textOff="       New       "
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/color"
+        android:layout_toRightOf="@+id/color"
+        android:layout_marginLeft="-4dp"
+        android:background="@drawable/toggler"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/color"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id="@+id/arduino"
+        android:background="@drawable/redroundresource"
+        android:src="@drawable/code"
+        android:scaleType="fitCenter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:id="@+id/connections"
+        android:background="@drawable/greenroundresource"
+        android:src="@drawable/arduinoimage"
+        android:scaleType="fitCenter"
+        android:layout_alignTop="@+id/arduino"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/whenconnected"
+        android:layout_below="@+id/arduino"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignLeft="@+id/arduino" />
+
+</RelativeLayout>

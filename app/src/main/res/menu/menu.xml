@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/ColorWheel"
+        android:title="@string/colorwheel" />
+    <item android:id="@+id/SeekBars"
+        android:icon="@drawable/seekbar"
+        android:title="@string/seekbars">
+        <menu></menu>
+    </item>
+    <item android:id="@+id/rate"
+        android:icon="@drawable/rateapp"
+        android:title="@string/rateapp" />
+</menu>

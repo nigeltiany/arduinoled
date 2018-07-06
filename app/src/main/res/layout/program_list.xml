@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:screenOrientation="portrait"
+    android:showDividers="none">
+
+    <ImageView
+        android:id="@+id/led_image"
+        android:layout_gravity="center"
+        android:layout_width="48dp"
+        android:layout_height="52dp"
+        android:src="@drawable/led_diode"
+        android:adjustViewBounds="false"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/led_image" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/TextView"/>
+
+        <TableRow
+            android:layout_width="156dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="40dp">
+
+            <TextView
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/red_value"
+                android:id="@+id/red_value"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ff0000"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/green_value"
+                android:id="@+id/green_value"
+                android:layout_gravity="center_vertical"
+                android:textColor="#04ff00"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/blue_value"
+                android:id="@+id/blue_value"
+                android:layout_gravity="center_vertical"
+                android:textColor="#0400ff"
+                android:textAlignment="center" />
+        </TableRow>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\src\main\java\libs\android-zoom-view.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8ea0253f9d7cff1661f29d4f090773471164f785">
+        <dex dex="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\pre-dexed\release\android-zoom-view-ebc101e4a8c7cd1784fa0526bb1b9db3a1612e81.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\pre-dexed\release\classes-8c78ccdf1181109eb045d4cdae8518371a121022.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\pre-dexed\release\classes-aa803a0eb548ece844e1b1d137f9aad9d142f99b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\pre-dexed\release\classes-6986a0e3d455a550089797ab631c732a97ae8d9e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\src\main\java\libs\android-core.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a7e3edb5dae34079c904806ae9dafaa2dfc0b53b">
+        <dex dex="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\pre-dexed\release\android-core-ab6eb64062859169649176dc517752da284ebfa9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\exploded-aar\com.larswerkman\HoloColorPicker\1.5\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ffaf68fa06f0339acf8f44d7b8c21d5c0501692b">
+        <dex dex="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\pre-dexed\release\classes-05b449ce6f26d68d8ebd31e41686d38574a7d49c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\pre-dexed\release\classes-d0a3ee7284d8d3dfb41a4cda5a612df63a5a3c6c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nigel\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\pre-dexed\release\support-annotations-23.1.1-917d24ae0a29fc349ec31cb24368de90a5f8c73e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\pre-dexed\release\internal_impl-23.1.1-c72e52af0413b9381048de6a8772330a8df311f0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="345a1b5cf5b144ce18ba6962bc66a7e2f26c1c1b">
+        <dex dex="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\pre-dexed\release\classes-698da55c213e90377e2465e475e42412ac55266a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="27775d59b16610ac76f1b83693fedd9520396332">
+        <dex dex="C:\Users\Nigel\Dropbox\AndroidProjects\Arduino LED (paid)\app\build\intermediates\pre-dexed\release\classes-a3c63d6e6f1d28781aa1117d726d48506c06fbe5.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".paid.Color_Activity"
+    android:scrollIndicators="right"
+    android:screenOrientation="portrait">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp">
+
+        <com.larswerkman.holocolorpicker.ColorPicker
+            android:id="@+id/color_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:visibility="visible"
+            ads:color_wheel_radius="120dp"
+            ads:color_wheel_thickness="36dp"
+            ads:color_center_radius="64dp"
+            android:layout_gravity="center" />
+
+        <ToggleButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/speakButton"
+            android:checked="false"
+            android:background="@drawable/microphone_toggle"
+            android:layout_gravity="center"
+            android:textOff="@string/notext"
+            android:textOn="@string/notext" />
+
+    </FrameLayout>
+
+    <com.larswerkman.holocolorpicker.OpacityBar
+        android:id="@+id/color_picker_opacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tableRow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_color"
+        android:id="@+id/save_color"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="vertical"
+        android:id="@+id/tableLayout"
+        android:layout_above="@+id/save_color"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/groups_spinner" />
+
+    </TableLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_above="@+id/tableLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tableRow"
+        android:layout_marginBottom="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/text_delay"
+            android:id="@+id/text_delay"
+            android:maxHeight="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_column="0"
+            android:layout_marginTop="13dp" />
+
+        <SeekBar
+            android:layout_width="fill_parent"
+            android:layout_height="33dp"
+            android:id="@+id/delay"
+            android:minWidth="200dp"
+            android:indeterminate="false"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="36dp"
+            android:minHeight="42dp"
+            android:progressTint="#0040ff"
+            android:max="5000"
+            android:progress="500"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/delayText"
+            android:layout_marginLeft="-36dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/delatTXT"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp" />
+    </TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/getSOLID"
+        android:layout_alignBottom="@+id/save_color"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:id="@+id/seekBars"
+        android:visibility="invisible">
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/red_round"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:id="@+id/redFrameLayout">
+
+            <SeekBar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/redSeekBar"
+                android:max="255"
+                android:progress="255"
+                android:indeterminate="false"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="46dp"
+                android:text="-"
+                android:id="@+id/takered"
+                android:layout_gravity="center_horizontal|left"
+                android:background="@drawable/left_button"
+                android:textSize="32dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:clickable="true"
+                android:alpha="0.85"
+                android:visibility="invisible" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="46dp"
+                android:text="+"
+                android:id="@+id/addred"
+                android:layout_gravity="center_horizontal|right"
+                android:textSize="32dp"
+                android:gravity="center|top"
+                android:background="@drawable/right_button"
+                android:alpha="0.85"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="46dp"
+            android:background="@drawable/green_round"
+            android:id="@+id/greenFrameLayout">
+
+            <SeekBar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/greenSeekBar"
+                android:max="255"
+                android:progress="255"
+                android:indeterminate="false"
+                android:layout_gravity="center" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="46dp"
+                android:text="-"
+                android:id="@+id/takegreen"
+                android:layout_gravity="center_horizontal|left"
+                android:background="@drawable/left_button"
+                android:textSize="32dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:clickable="true"
+                android:alpha="0.85"
+                android:visibility="invisible" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:text="+"
+                android:id="@+id/addgreen"
+                android:layout_gravity="center_horizontal|right"
+                android:textSize="32dp"
+                android:gravity="center|top"
+                android:background="@drawable/right_button"
+                android:alpha="0.85"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="46dp"
+            android:background="@drawable/blue_round"
+            android:id="@+id/blueFrameLayout">
+
+            <SeekBar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/blueSeekBar"
+                android:max="255"
+                android:progress="255"
+                android:indeterminate="false"
+                android:layout_gravity="center" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="46dp"
+                android:text="-"
+                android:id="@+id/takeblue"
+                android:layout_gravity="center_horizontal|left"
+                android:background="@drawable/left_button"
+                android:textSize="32dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:clickable="true"
+                android:alpha="0.85"
+                android:visibility="invisible" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:text="+"
+                android:id="@+id/addblue"
+                android:layout_gravity="center_horizontal|right"
+                android:textSize="32dp"
+                android:gravity="center|top"
+                android:background="@drawable/right_button"
+                android:alpha="0.85"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/ColorName"
+        android:id="@+id/textView9"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+    <TableRow
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:baselineAligned="true"
+        android:gravity="center_horizontal|left|right|top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-7dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/red"
+            android:layout_gravity="bottom"
+            android:textAlignment="center"
+            android:textColor="#ff0000" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/green"
+            android:layout_gravity="bottom"
+            android:textAlignment="center"
+            android:textColor="#11fe00"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/blue"
+            android:layout_gravity="bottom"
+            android:textAlignment="center"
+            android:textColor="#0011ff"
+            android:gravity="left" />
+    </TableRow>
+
+</RelativeLayout>

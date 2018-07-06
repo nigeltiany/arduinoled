@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tiany.nigel.arduinoled" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".paid.MainActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".paid.Splashscreen"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <View
+            android:name=".Color_Activity"
+            android:screenOrientation="portrait" >
+        </View>
+        <View
+            android:windowSoftInputMode="adjustPan">
+            android:name=".Config_Activity"
+            android:screenOrientation="portrait" >
+        </View>
+        <View
+            android:name=".play_Activity"
+            android:label="@string/title_activity_play_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </View>
+        <View
+            android:name=".Bluetooth"
+            android:screenOrientation="portrait" >
+        </View>
+
+        <activity
+            android:name=".paid.SketchActivity"
+            android:title="Arduino LED" >
+        </activity>
+
+        <activity
+            android:name=".paid.HowToWireUp"
+            android:title="Arduino LED" >
+        </activity>
+    </application>
+
+</manifest>
